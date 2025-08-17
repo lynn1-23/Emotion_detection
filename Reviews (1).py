@@ -117,7 +117,7 @@ st.markdown("""
 #Load Dataset
 @st.cache_data
 def load_data():
-    df = pd.read_csv("Reviews.csv")
+    df = pd.read_csv("Reviews_7k.csv")
     # Create a reproducible random sample for consistent results
     df_sample = df.sample(5000, random_state=42).reset_index(drop=True)
     return df_sample
@@ -396,4 +396,5 @@ with tab6:
         st.bar_chart(df_reviews["Rating"].value_counts().sort_index())
 
     else:
+
         st.info("No reviews available yet.")
