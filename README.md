@@ -1,2 +1,1 @@
-# Emotion_detection
-Text_Projects
+# Food-Reviews
